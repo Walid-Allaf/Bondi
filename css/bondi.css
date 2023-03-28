@@ -1,0 +1,157 @@
+:root {
+  --dark-color: #19233f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+
+* {
+  transition: 0.3s;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "roboto-light";
+  src: url(../roboto-font/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "roboto-regular";
+  src: url(../roboto-font/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "roboto-medium";
+  src: url(../roboto-font/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url(../roboto-font/Roboto-Bold.ttf);
+}
+
+
+/* Start Navbar */
+.navbar {
+  background: var(--dark-color);
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:focus,
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--green-color);
+}
+
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+
+.navbar .search svg {
+  color: var(--green-color);
+}
+
+.main-btn {
+  color: var(--yellow-color);
+  background: var(--red-color);
+  padding: 0.5rem 1rem;
+}
+
+.main-btn:hover {
+  color: var(--yellow-color);
+}
+
+.navbar .navbar-toggler {
+  color: #fff;
+  border-color: #fff;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded='true'] {
+  border-color: var(--green-color);
+}
+
+/* End Navbar */
+
+/* Start Landing */
+.landing {
+  background: var(--dark-color);
+  min-height: calc(100vh - 72px);
+}
+
+/* End Landing */
+
+/* Start Features */
+.main-title::after {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--green-color);
+}
+
+.features .icon-holder {
+  height: 200px;
+}
+
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+  color: var(--section-color);
+  font-size: 12rem;
+}
+
+.features .icon-holder .icon {
+  color: var(--green-color);
+}
+
+.features .feat h4 {
+  color: var(--yellow-color);
+}
+
+/* End Features */
+
+/* Start Our Work */
+.our-work {
+  background: var(--section-color);
+}
+
+.our-work ul .active {
+  background: var(--red-color);
+  color: var(--yellow-color);
+}
+
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.our-work ul li:not(.active):hover {
+  color: var(--red-color);
+}
+
+/* End Our Work */
