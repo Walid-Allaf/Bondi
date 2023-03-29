@@ -6,7 +6,9 @@
   --section-color: #eff7fa;
 }
 
-* {
+*,
+::before,
+::after {
   transition: 0.3s;
 }
 
@@ -152,6 +154,31 @@ a {
 
 .our-work ul li:not(.active):hover {
   color: var(--red-color);
+}
+
+.our-work .box {
+  position: relative;
+  overflow: hidden;
+}
+
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  width: calc(100% - 0.5rem);
+  height: calc(100% - 0.5rem);
+  transform: translateX(calc(100% + 0.25rem));
+  top: 0.25rem;
+  background: #33d1ccb3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.our-work .box:hover::before {
+  transform: translateX(0);
 }
 
 /* End Our Work */
