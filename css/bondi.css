@@ -13,33 +13,12 @@
 }
 
 body {
-  font-family: "roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
   text-decoration: none;
 }
-
-@font-face {
-  font-family: "roboto-light";
-  src: url(../roboto-font/Roboto-Light.ttf);
-}
-
-@font-face {
-  font-family: "roboto-regular";
-  src: url(../roboto-font/Roboto-Regular.ttf);
-}
-
-@font-face {
-  font-family: "roboto-medium";
-  src: url(../roboto-font/Roboto-Medium.ttf);
-}
-
-@font-face {
-  font-family: "roboto-bold";
-  src: url(../roboto-font/Roboto-Bold.ttf);
-}
-
 
 /* Start Navbar */
 .navbar {
